@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        .header h2{
+            font-family:algerian;
+            font-size: 55px;
+            color: blue;
+        }
+        @media screen and (min-width:992px) {
+            .dropdown-menu-dark{
+                margin-left: -50px;
+            }
+        }
+        .signup-form{
+            box-shadow: 2px 3px 10px silver;
+            padding: 45px;
+        }
+                
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h2 class="d-flex justify-content-center align-items-center bg-light"><img src="./public/images/logo.jpg" height="100">Naresh-it Technologies</h2>
+                </div>
+            <div class="container-fluid">
+                <div class="navbar  navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-nav navbar-collapse collapse" id="menu">
+                                <div class="nav-item">
+                                    <a href="index.html" target="frameBody" class="nav-link"> <span class="bi bi-house-fill"></span> Home</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="about.html" target="frameBody" class="nav-link"> <span class="bi bi-info-circle-fill"></span>About</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="services.html" target="frameBody" class="nav-link"> <span class="bi bi-question-circle-fill"></span>Services</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="contact.html" target="frameBody" class="nav-link"> <span class="bi bi-phone-fill"></span>Contact</a>
+                                </div>
+                                <div class="nav-item">
+                                    <form class="input-group">
+                                        <input type="text" class="form-control" placeholder="search courses....">
+                                        <button  class="btn btn-warning"><span class="bi bi-search"></span></button>
+                                    </form>
+                                 </div>
+                        </div>
+                        <ul class="navbar-nav dropdown ms-auto me-4">
+                            <li class="nav-item dropdown">
+                              
+                                <button data-bs-target= items data-bs-toggle="dropdown"  class="dropdown-toggle  btn btn-primary">
+                                    <span class="bi bi-box-arrow-in-right">Sign-in </span>
+                                   </button>
+                                   <ul class="dropdown-menu collapse dropdown-menu-dark small id=items"> 
+                                <li><a class="dropdown-item" href="login.html">
+                                    <span class="bi bi-box-arrow-in-right"></span> Log-In</a></li>
+                                <li><a class="dropdown-item" href="signup.html">
+                                    <span class="bi bi-person-plus-fill"></span> Sign Up</a></li>
+                                <li><a class="dropdown-item" href="password.html">
+                                    <span class="bi bi-lock-fill"></span> Change Password</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                            </div>
+                         </div>
+                      </div>
+                      </div>
+              </section>
+              <div class="d-flex justify-content-center align-items-center" style="height: 950px;">
+                <div class="row gx-2">
+                <form class="border p-4 shadow border-2 rounded rounded-3 border-warning " style="width: 450px;">
+                    <div class="row">
+                        <div class="text-center  d-flex justify-content-center align-items-center w-100 h-50">
+                          <img src="./public/images/download.jpg" class="img-responsive thumbnail" height="55em" width="45em">
+                        </div>
+                    <h3 class="text-center">Registration Form</h3>
+                    <div class="mt-3">
+                        <label class="form-label" for="UserName">Full Name : </label>
+                        <div>
+                            <input class="form-control" type="text" name="UserName" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                      <label class="form-label" for="email">Email : </label>
+                      <div>
+                          <input class="form-control" type="email" name="email" placeholder="Email id">
+                      </div>
+                  </div>
+                  <div class="mt-3">
+                    <label class="form-label" for="Number"> Contact no. : </label>
+                    <div>
+                        <input class="form-control" type="text" name="Number" placeholder="contact no">
+                    </div>
+                </div>
+                <div class="mt-3">
+                  <label class="form-label" for="date">Date : </label>
+                  <div>
+                      <input class="form-control" type="date" name="UserName" placeholder="Date">
+                  </div>
+              </div>
+              <div class="mt-3">
+                <label class="form-label" for="file">Image : </label>
+                <div>
+                  <input type="file" name="file" placeholder="Image" accept=".png, .jpg, .jpeg" required>
+                </div>
+            </div>
+                    <div class="mt-3">
+                        <label class="form-label" for="Password">Password :</label>
+                        <div>
+                            <input class="form-control" type="password" name="Password" placeholder="password">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                      <label class="form-label" for="Password">Confirm Password :</label>
+                      <div>
+                          <input class="form-control" type="password" name="Password" placeholder="Confirm password">
+                      </div>
+                  </div>
+                    <div class="mt-3">
+                        <label class="form-label" for="City">Gender:</label>
+                     
+                <input type="radio" name="gender" value="mail" ><label>Male</label>
+                <input type="radio" name="gender" value="Female"><label>Female</label>
+                    </div>
+                    <div class="mt-3 form-switch">
+                       <input class="form-check-input" type="checkbox"> <label class="form-check-label">I've read and Accept the 
+                           <a  href="#" class="text-danger text-decoration-none" data-bs-target="#item" data-bs-toggle="modal">Terms and Conditions</a>
+                       </div>
+                    <div class="modal fade" id="item">
+                        <div class="modal-dialog">
+                    <div class="modal-content">
+                          <div class="modal-header">
+                            <h3>Terms and conditions</h3>
+                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                                     
+                    <p class="bi bi-star" style="line-height: 1.4"> &nbsp; A Terms and Conditions agreement is the agreement that includes the terms, the rules and the guidelines of acceptable behavior and other useful sections to which users must agree in order to use or access your website and mobile app.</p>
+                    <p class="bi bi-star" style="line-height: 1.4"> &nbsp; While most websites seem to have one, there's actually no legal requirement for defining terms and conditions. However, if you are gathering user's personal data, you are required to have a stated Privacy Policy. Terms and Conditions may not be required by law, but it's still a smart thing to include.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="closebtn" data-bs-dismiss="modal" class="btn btn-warning btn-md pull-right">Close</button>
+                       </div>
+                      </div>
+                     </div> 
+                     </div>
+                          
+                    <div class="mt-3">
+                        <button class="btn btn-warning ">Already you have an account</button>
+                        <button class="btn btn-success float-end ">Register</button>
+                    </div>
+                </form>
+                  </div>
+                </div>
+            </div>
+                        
+            <section class="footer bg-dark text-white">
+                <div class="container">
+                   <div class="row">
+                       <p class="text-center mb-4"><strong>Naresh technologies</strong></p>
+                      <div class="col-md-4 bg-gradient">
+                         <ul>
+                             <li><span class="bi bi-facebook"></span> Facebook</li>
+                             <li><span class="bi bi-google"></span> Google</li>
+                             <li><span class="bi bi-twitter"></span> Twitter</li>
+                             <li><span class="bi bi-youtube"></span> Youtube</li>
+                         </ul>
+                      </div>
+             
+                      <div class="col-md-4 bg-gradient">
+                         <ul class="footlink">
+                             <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                             <li><a class="text-decoration-none" href="about.html">About</a></li>
+                             <li><a class="text-decoration-none" href="service.html">Service</a></li>
+                             <li><a class="text-decoration-none" href="contact.html">Contact</a></li>
+                         </ul>
+                      </div>
+             
+                      <div class="col-md-4 bg-gradient">
+                         <ul>
+                             <li>Name: Naresh Institute</li>
+                             <li>Email: naresh@gmail.com</li>
+                             <li>Contact: +91-xxxxxxxxxx</li>
+                             <li>Address: Sr nagar, Hyderabad, Telangana, India</li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+             </section>
+                 <script src="./node_modules/jquery/dist/jquery.js"></script>
+                 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+             </body>
+             </html>
+    

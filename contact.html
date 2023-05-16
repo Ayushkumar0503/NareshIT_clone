@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../bootstrap/images/ficon.JPG" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>naresh it online technologies </title>
+    <style>
+        .header h2{
+            font-family:algerian;
+            font-size: 55px;
+            color: blue;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(190, 189, 189);
+            font-size: 14px;
+        }
+
+        .navetitle {
+            color: rgb(190, 189, 189);
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .navetitle:hover {
+            color: white;
+        }
+        @media screen and (min-width:992px) {
+    .dropdown-menu-dark{
+        margin-left: -50px;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="d-flex justify-content-center align-items-center bg-light"><img src="./public/images/logo.jpg" height="100">Naresh-it Technologies</h2>
+        </div>
+    <div class="container-fluid">
+        <div class="navbar  navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-nav navbar-collapse collapse" id="menu">
+                        <div class="nav-item">
+                            <a href="index.html" target="frameBody" class="nav-link"> <span class="bi bi-house-fill"></span> Home</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="about.html" target="frameBody" class="nav-link"> <span class="bi bi-info-circle-fill"></span>About</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="services.html" target="frameBody" class="nav-link"> <span class="bi bi-question-circle-fill"></span>Services</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="contact.html" target="frameBody" class="nav-link"> <span class="bi bi-phone-fill"></span>Contact</a>
+                        </div>
+                        <div class="nav-item">
+                            <form class="input-group">
+                                <input type="text" class="form-control" placeholder="search courses....">
+                                <button  class="btn btn-warning"><span class="bi bi-search"></span></button>
+                            </form>
+                         </div>
+                </div>
+                <ul class="navbar-nav dropdown ms-auto me-4">
+                    <li class="nav-item dropdown">
+                      
+                        <button data-bs-target= items data-bs-toggle="dropdown"  class="dropdown-toggle  btn btn-primary">
+                            <span class="bi bi-box-arrow-in-right">Sign-in </span>
+                           </button>
+                           <ul class="dropdown-menu collapse dropdown-menu-dark small id=items"> 
+                        <li><a class="dropdown-item" href="login.html">
+                            <span class="bi bi-box-arrow-in-right"></span> Log-In</a></li>
+                        <li><a class="dropdown-item" href="signup.html">
+                            <span class="bi bi-person-plus-fill"></span> Sign Up</a></li>
+                        <li><a class="dropdown-item" href="password.html">
+                            <span class="bi bi-lock-fill"></span> Change Password</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                    </div>
+                 </div>
+              </div>
+              </div>
+      </section>
+    <div class="container mt-4 px-4">
+        <div class="row gx-5">
+          <div class="col">
+            <center><h3><strong>Contact Details</strong></h3></center>
+            <br>
+            <form class="contact one">
+            <ul>
+            <li class=""><strong>Name:</strong> Naresh Technologies </li><br>
+            <li class=""><strong>Email ID:</strong> info@nareshit.com</li><br>
+            <li class=""><strong>Contact Number:</strong> +91-xxxxxxxxxx</li><br>
+            <li class=""><strong>Address:</strong> Hyderabad, India</li><br>
+            </ul>
+          </div>
+          <div class="col">
+            <div>
+                <img src="./public/images/contact-us.jpg" class="img-responsive thumbnail" height="310em" width="400em">
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="footer mt-5 bg-dark text-white">
+        <div class="container">
+           <div class="row">
+               <p class="text-center mb-4"><strong>Naresh technologies</strong></p>
+              <div class="col-md-4 bg-gradient">
+                 <ul>
+                     <li><span class="bi bi-facebook"></span> Facebook</li>
+                     <li><span class="bi bi-google"></span> Google</li>
+                     <li><span class="bi bi-twitter"></span> Twitter</li>
+                     <li><span class="bi bi-youtube"></span> Youtube</li>
+                 </ul>
+              </div>
+     
+              <div class="col-md-4 bg-gradient">
+                 <ul class="footlink">
+                     <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                     <li><a class="text-decoration-none" href="about.html">About</a></li>
+                     <li><a class="text-decoration-none" href="service.html">Service</a></li>
+                     <li><a class="text-decoration-none" href="contact.html">Contact</a></li>
+                 </ul>
+              </div>
+     
+              <div class="col-md-4 bg-gradient">
+                 <ul>
+                     <li>Name: Naresh Institute</li>
+                     <li>Email: naresh@gmail.com</li>
+                     <li>Contact: +91-xxxxxxxxxx</li>
+                     <li>Address: Sr nagar, Hyderabad, Telangana, India</li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </section>
+      <script src="./node_modules/jquery/dist/jquery.js"></script>
+     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
